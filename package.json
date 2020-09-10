@@ -1,0 +1,48 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio to showcase my skills",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "webpack --config=webpack.config.js ",
+    "dev": "webpack-dev-server",
+    "prod": "http-server dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedgut/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "full-stack"
+  ],
+  "author": "Eduardo Gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fedgut/portfolio/issues"
+  },
+  "homepage": "https://github.com/fedgut/portfolio#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.8.0",
+    "stylelint-scss": "^3.17.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.4.1",
+    "terser-webpack-plugin": "^2.3.6",
+    "webpack": "^4.44.1",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2",
+    "http-server": "^0.12.3"
+  }
+}
