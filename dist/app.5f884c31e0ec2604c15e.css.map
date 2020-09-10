@@ -1,0 +1,1 @@
+{"version":3,"sources":["css ./node_modules/css-loader/dist/cjs.js!./src/index.css"],"names":[],"mappings":"AAAA,KACA,kBAAA,CACA,UACA","file":"app.5f884c31e0ec2604c15e.css","sourcesContent":["body {\n  background: deeppink;\n  color: white;\n}"]}

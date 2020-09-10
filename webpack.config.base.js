@@ -3,20 +3,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: './dist',
-  },
-  watch: true,
-  watchOptions: {
-    aggregateTimeout: 100,
-  },
   entry: {
     app: ['babel-polyfill', './src/app.js'],
   },
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].bundle.[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
@@ -30,11 +21,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.m?js$/,
+        test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
